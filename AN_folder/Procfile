@@ -1,1 +1,2 @@
-web: gunicorn AN_form:app
+web: gunicorn app:app
+
