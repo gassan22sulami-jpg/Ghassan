@@ -204,8 +204,8 @@ def process_data_atomicnumber():
     if result > 118 or result < 1:
         return "Error"
     
-    check = start()
-    if check != '1': return "False"
+    #check = start()
+    #if check != '1': return "False"
 
     name = GNAN(result)
     text = "خصائص العنصر"
@@ -229,4 +229,5 @@ app.run(host="0.0.0.0", port=5000)
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
