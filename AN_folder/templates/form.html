@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar", dir="auto">
+<head>
+    <title>البحث باستعمال العدد الذري</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css.css') }}">
+</head>
+<body>
+    <h1>البحث باستعمال العدد الذري</h1>
+
+    <form action="/process" method="POST">
+        <input type="number" name="atomic" placeholder="العدد الذري">
+        <button type="submit">إرسال</button>
+    </form>
+    <div>
+        <h1 class="title">{{ name }}</h1>
+    </div>
+
+    <div class="main-box">
+        <h2 class="text">{{ text }}</h2>
+        <h3 class="desc">{{ metal }} {{ state }}</h3>
+        <h3 class="desc">{{ num1 }} {{num2}}</h3>
+        <h3 class="desc">{{ symbol1 }} {{ symbol2 }}</h3>
+        <h3 class="desc">{{ EC1 }} {{ EC2 }}</h3>
+        <h3 class="desc">{{ VE1 }} {{ VE2 }}</h3>
+        <h3 class="desc">{{ ECG1 }} {{ ECG2 }}</h3>
+    </div>
+</body>
+</html>
+
